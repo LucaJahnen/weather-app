@@ -81,7 +81,7 @@ const displayDays = daysArray => {
             <div class="img-wrapper">
                 ${icons[day.icon]}
             </div>
-            <p>${daysOfWeek[date.getDay() + index] === undefined ? daysOfWeek[date.getDay() + index - 7]: daysOfWeek[date.getDay() + index]}</p>
+            <p>${index === 0 ? "Today" : daysOfWeek[date.getDay() + index] === undefined ? daysOfWeek[date.getDay() + index - 7]: daysOfWeek[date.getDay() + index]}</p>
             <p>${Math.round(day.tempmin) + unit} - ${Math.round(day.tempmax) + unit}</p>
         </section>`
         const div = document.createElement("div")
