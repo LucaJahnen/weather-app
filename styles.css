@@ -198,9 +198,9 @@ h1, .address, p {
         .forecast {
             margin: 0 0 0.6rem 0;
         }
+    }
 
-        .loading {
-            margin-top: 10rem;
-        }
+    .loading {
+        margin-top: 8rem;
     }
 }

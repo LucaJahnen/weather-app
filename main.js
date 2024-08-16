@@ -120,7 +120,7 @@ const displayData = data => {
     feelslike.textContent = unitInput.checked ? feelslikeValue +  "°C" : feelslikeValue +  "°F"
     sunrise.textContent = sunriseValue.substring(0, sunriseValue.length - 3)
     sunset.textContent = sunsetValue.substring(0, sunsetValue.length - 3)
-    windspeed.textContent = windspeedValue
+    windspeed.textContent = unitInput.checked ? windspeedValue + "km/h" : windspeedValue + "mp/h"
     humidity.textContent = humidityValue + "%"
     uvindex.textContent = uvindexValue
     conditions.textContent = conditionsValue
