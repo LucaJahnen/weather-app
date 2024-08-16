@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="weather app to get information on your location">
+    <meta name="keywords" content="weather app, weather, rain, sun">
     <title>Weather App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +18,13 @@
     <form action="#" class="location-form">
         <label for="location">
             <ion-icon name="search-outline"></ion-icon>
-            <input type="text" id="location" placeholder="Search for a city" required>
+            <input type="text" id="location" placeholder="Search for a city" required aria-label="search">
         </label>
     </form>
     <form action="#" class="unit-form">
         <p>°C</p>
         <label for="unit">
-            <input type="checkbox" id="unit" checked>
+            <input type="checkbox" id="unit" checked aria-label="toggle unit between fahrenheit and celcius">
         </label>
         <p>°F</p>
     </form>
