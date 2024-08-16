@@ -30,16 +30,51 @@
        <div>
             <h2 class="address"></h2>
             <h1 class="temperature"></h1>
-            <p class="conditions"></p>
+           <div class="cards">
+                <section>
+                    <h3>Feels like</h3>
+                    <p class="feelslike"></p>
+                </section>
+                <section>
+                    <h3>Humidity</h3>
+                    <p class="humidity"></p>
+                </section>
+                <section>
+                    <h3>Windspeed</h3>
+                    <p class="windspeed"></p>
+                </section>
+                <section>
+                    <h3>UV-Index</h3>
+                    <p class="uv-index"></p>
+                </section>
+                <section>
+                    <h3>Sunrise</h3>
+                    <p>
+                        <ion-icon name="sunny-outline"></ion-icon>
+                        <span class="sunrise"></span>
+                    </p>
+                </section>
+                <section>
+                    <h3>Sunset</h3>
+                    <p>
+                        <ion-icon name="sunny-outline"></ion-icon>
+                        <span class="sunset"></span>
+                    </p>
+                </section>
+           </div>
+            <section class="conditions-wrapper">
+                <h3>Conditions</h3>
+                <p class="conditions"></p>
+            </section>
        </div>
        <div>
             <h2 class="forecast">5-day forecast</h2>
             <div class="days"></div>
        </div>
-       <div class="loading">
-            <div class="pulse"></div>
-            <p>Loading...</p>
-       </div>
     </main>
+    <div class="loading">
+         <div class="pulse"></div>
+         <p>Loading...</p>
+    </div>
 </body>
 </html>

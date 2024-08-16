@@ -70,19 +70,47 @@ body, button {
             transform: translateY(-50%);
         }
     }
-
-    p {
-        margin: 0;
-    }
 }
 
 h1, .address, p {
     text-align: center;
 }
 
-p, .temperature {
+.conditions, .temperature, .feelslike {
     margin-top: 0.6rem;
 }
+
+.temperature {
+    margin-bottom: 1.6rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+
+    section p ion-icon {
+        transform: translateY(0.15rem);
+    }
+}
+
+
+.cards section, .conditions-wrapper {
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        text-align: left;
+        margin-top: 0.3rem;
+    }
+}
+
+.conditions-wrapper {
+    margin-top: 1rem;
+}
+
 
 .forecast {
     margin: 2rem 0 0.6rem;
@@ -106,10 +134,6 @@ p, .temperature {
             border-radius: 0.3rem;
             padding: 0.5rem;
         }
-
-        p {
-            margin: 0;
-        }
     }
 }
 
@@ -123,8 +147,8 @@ p, .temperature {
 }
 
 .pulse {
-    width: 8vw;
-    height: 8vw;
+    width: 8vmin;
+    height: 8vmin;
     background-color: #3498db;
     border-radius: 50%;
     animation: pulse 1.5s infinite;
@@ -150,6 +174,13 @@ p, .temperature {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        gap: 5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
 
         .days {
             gap: 1.6rem;
@@ -162,6 +193,14 @@ p, .temperature {
                     font-size: 20px;
                 }
             }
+        }
+
+        .forecast {
+            margin: 0 0 0.6rem 0;
+        }
+
+        .loading {
+            margin-top: 10rem;
         }
     }
 }
