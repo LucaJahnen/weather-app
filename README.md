@@ -34,4 +34,4 @@ You may have noticed that I explicitly check for the http 400 error code because
 - [Open Sans from Google Fonts](https://fonts.google.com/specimen/Open+Sans): A sans-serif typeface
 
 ## Design Inspiration
-I used [Galileo AI](https://www.usegalileo.ai/explore) to design to design a basic mobile interface and then adjusted the design to my needs.
+I used [Galileo AI](https://www.usegalileo.ai/explore) to design a basic mobile interface and then adjusted the design to my needs.
