@@ -1,4 +1,4 @@
-# Weater App Challenge - TheOdinProject
+# Weather App Challenge - TheOdinProject
 This is my solution to the [Weather App Challenge](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) provided by [TheOdinProject](https://TheOdinProject.com).
 
 ## The challenge
